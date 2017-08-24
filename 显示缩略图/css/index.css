@@ -1,0 +1,91 @@
+body,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0
+}
+
+ul li {
+	list-style-type: none
+}
+
+.imgBox {
+	width: 600px;
+	height: 600px;
+	padding: 50px 20px 100px;
+	background: #3E3E3E;
+	margin: 0 auto;
+	position: relative
+}
+
+.imgBox p {
+	width: 580px;
+	height: 50px;
+	padding-left: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 50px;
+	color: #FFFFFF;
+	font-weight: bold
+}
+
+.imgBox span {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	top: 300px;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	z-index: 900;
+	cursor: pointer
+}
+
+.imgBox .leftImg {
+	left: 20px
+}
+
+.imgBox .rightImg {
+	right: 20px
+}
+
+.imgBox ul {
+	width: 120px;
+	height: 15px;
+	margin: 15px auto 0
+}
+
+.imgBox ul li {
+	width: 30px;
+	height: 15px;
+	float: left;
+	position: relative;
+}
+
+.imgBox ul .circleLi {
+	background: url(../img/circleGray.png) no-repeat
+}
+
+.imgBox ul .circleLi1 {
+	background: url(../img/circleYellow.png) no-repeat
+}
+
+.imgBox ul li div {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -100px;
+	left: -45px;
+	z-index: 999;
+	display: none
+}
+
+.imgBox ul li div.visible {
+	display: block
+}
+
+.imgBox ul li div.hidden {
+	display: none
+}
